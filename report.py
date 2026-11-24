@@ -29,16 +29,21 @@ def build_summary(all_results):
     return summary
 
 
-def save_report(all_results, summary):
-    """Write the audit report to reports/ and return the file path."""
-    os.makedirs(REPORT_FOLDER, exist_ok=True)
+def save_report(all_results, summary, scope="Local test data", output_folder=REPORT_FOLDER):
+    """Write the audit report to the output folder and return the file path.
+
+    scope         - who/what the user is authorised to audit (recorded for accountability)
+    output_folder - local folder for reports (default: reports/ next to the tool)
+    """
+    os.makedirs(output_folder, exist_ok=True)
     now = datetime.now()
     file_name = "audit_report_" + now.strftime("%Y%m%d_%H%M%S") + ".txt"
-    file_path = os.path.join(REPORT_FOLDER, file_name)
+    file_path = os.path.join(output_folder, file_name)
 
     lines = []
     lines.append("PassGuard - Password Policy Audit Report")
     lines.append("Generated : " + now.strftime("%Y-%m-%d %H:%M:%S"))
+    lines.append("Scope     : " + scope)
     lines.append("Note      : Passwords are NOT stored in this report.")
     lines.append("=" * 70)
 
