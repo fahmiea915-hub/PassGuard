@@ -1,0 +1,8 @@
+# PassGuard - Python dependencies
+#
+# Requires Python 3.8 or newer.
+# PassGuard uses ONLY the Python standard library
+# (os, re, string, getpass, datetime), so there is nothing to install.
+#
+# You can still run this safely:
+#   pip install -r requirements.txt
