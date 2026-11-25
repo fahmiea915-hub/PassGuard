@@ -37,11 +37,10 @@ local compliance report that **never contains any password**.
 
 | Name | Student ID | Role |
 |------|-----------|------|
-| _Member 1_ | _ID_ | _e.g. Checks module (checker.py)_ |
-| _Member 2_ | _ID_ | _e.g. Scoring module (analyzer.py)_ |
-| _Member 3_ | _ID_ | _e.g. Reporting module (report.py)_ |
-| _Member 4_ | _ID_ | _e.g. CLI, documentation and testing_ |
-
+| Ahmad Fahmie Bin Mohd Khairy | 52215125925 | Checks module (checker.py)_ |
+| Afiq Naqiuddin Bin Shafie | 52215125765 | Scoring module (analyzer.py)_ |
+| Haziq Fahmi Bin ABD Aziz | 52215125155 | Reporting module (report.py)_ |
+| Adam Syabil Bin Sairuddin | 52215251624 | CLI, documentation and testing_ |
 ---
 
 ## Description
